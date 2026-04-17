@@ -22,12 +22,16 @@ const CreatePage = () => {
 
     setLoading(true);
     try {
-      const url = "http://localhost:3000/api/notes";
+      const BASE_URL =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:3000/api/notes`
+          : "/api";
+      // const url = "http://localhost:3000/api/notes";
 
       // const baseUrl = BaseUrl.concat("/users"); // from utils
       // console.log("BaseUrl", baseUrl);
 
-      const response = await fetch(url, {
+      const response = await fetch(BASE_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json", // Inform server about the data format

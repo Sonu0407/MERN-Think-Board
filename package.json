@@ -1,0 +1,22 @@
+{
+  "name": "mern-thinkboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix Backend && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start": "npm run start --prefix Backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sonu0407/MERN-Think-Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sonu0407/MERN-Think-Board/issues"
+  },
+  "homepage": "https://github.com/Sonu0407/MERN-Think-Board#readme"
+}

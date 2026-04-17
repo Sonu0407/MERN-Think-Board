@@ -16,8 +16,12 @@ const NoteDetailPage = () => {
   useEffect(() => {
     const fetchNote = async () => {
       try {
-        const url = `http://localhost:3000/api/notes/${id}`;
-        const response = await fetch(url, {
+        const BASE_URL =
+          import.meta.env.MODE === "development"
+            ? `http://localhost:3000/api/notes/${id}`
+            : "/api";
+        // const url = `http://localhost:3000/api/notes/${id}`;
+        const response = await fetch(BASE_URL, {
           method: "GET",
         });
 
@@ -53,8 +57,12 @@ const NoteDetailPage = () => {
     if (!window.confirm("Are you sure want to delete this note?")) return;
 
     try {
-      const url = `http://localhost:3000/api/notes/${id}`;
-      const response = await fetch(url, {
+      const BASE_URL =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:3000/api/notes/${id}`
+          : "/api";
+      // const url = `http://localhost:3000/api/notes/${id}`;
+      const response = await fetch(BASE_URL, {
         method: "DELETE",
       });
       // check response
@@ -76,8 +84,12 @@ const NoteDetailPage = () => {
     setSaving(true);
 
     try {
-      const url = `http://localhost:3000/api/notes/${id}`;
-      const response = await fetch(url, {
+      const BASE_URL =
+        import.meta.env.MODE === "development"
+          ? `http://localhost:3000/api/notes/${id}`
+          : "/api";
+      // const url = `http://localhost:3000/api/notes/${id}`;
+      const response = await fetch(BASE_URL, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

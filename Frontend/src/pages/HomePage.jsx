@@ -19,8 +19,12 @@ const HomePage = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const url = "http://localhost:3000/api/notes";
-        const response = await fetch(url);
+        const BASE_URL =
+          import.meta.env.MODE === "development"
+            ? `http://localhost:3000/api/notes`
+            : "/api";
+        // const url = "http://localhost:3000/api/notes";
+        const response = await fetch(BASE_URL);
         const data = await response.json(); // converting to json
         console.log(data);
         setNotes(data);
