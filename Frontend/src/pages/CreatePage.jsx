@@ -25,7 +25,7 @@ const CreatePage = () => {
       const BASE_URL =
         import.meta.env.MODE === "development"
           ? `http://localhost:3000/api/notes`
-          : "/api";
+          : "/api/notes";
       // const url = "http://localhost:3000/api/notes";
 
       // const baseUrl = BaseUrl.concat("/users"); // from utils

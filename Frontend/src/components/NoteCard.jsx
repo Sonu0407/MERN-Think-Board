@@ -13,7 +13,7 @@ const NoteCard = ({ note, setNotes }) => {
       const BASE_URL =
         import.meta.env.MODE === "development"
           ? `http://localhost:3000/api/notes/${id}`
-          : "/api";
+          : `/api/notes/${id}`;
       // const url = `http://localhost:3000/api/notes/${id}`;
       const response = await fetch(BASE_URL, {
         method: "DELETE",

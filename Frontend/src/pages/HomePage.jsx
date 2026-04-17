@@ -22,7 +22,7 @@ const HomePage = () => {
         const BASE_URL =
           import.meta.env.MODE === "development"
             ? `http://localhost:3000/api/notes`
-            : "/api";
+            : "/api/notes";
         // const url = "http://localhost:3000/api/notes";
         const response = await fetch(BASE_URL);
         const data = await response.json(); // converting to json
