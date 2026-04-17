@@ -1,0 +1,42 @@
+.header {
+  background-color: #0f766e;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  color: white;
+}
+
+.content {
+  margin: auto;
+  max-width: 72rem;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.content-writing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+}
+
+.create-note {
+  background-color: #f59e0b;
+  padding: 0.5rem;
+  border-radius: 14px;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}

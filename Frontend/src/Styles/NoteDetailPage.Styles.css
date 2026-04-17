@@ -1,0 +1,162 @@
+.page {
+  min-height: 100vh;
+  background-color: #020617; /* dark background */
+}
+
+.page-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  text-decoration: none;
+  color: #e5e7eb;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.2s ease;
+}
+
+.back-link:hover {
+  color: #1f9aa5; /* teal hover */
+}
+
+.delete-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 8px 14px;
+  border-radius: 6px;
+
+  border: 1px solid #ef4444;
+  background: transparent;
+
+  color: #ef4444;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 24px;
+
+  background-color: #d9c49c; /* paper */
+  border-radius: 16px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+
+  border-bottom: 2px solid #a16207;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.input {
+  width: 95%;
+  padding: 12px;
+
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+
+  background-color: #dcdcdc; /* soft grey */
+  font-size: 14px;
+
+  outline: none;
+}
+
+.input:focus {
+  border-color: #1f9aa5;
+  background-color: #e5e5e5;
+}
+
+.textarea {
+  width: 95%;
+  height: 140px;
+
+  padding: 12px;
+
+  border-radius: 8px;
+  border: 1px solid #bdbdbd;
+
+  background-color: #e6dfcf; /* paper-ish */
+  font-size: 14px;
+
+  resize: vertical;
+  outline: none;
+}
+
+.textarea:focus {
+  border-color: #1f9aa5;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #777;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end; /* right side */
+  margin-top: 20px;
+}
+
+.save-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+
+  border: none;
+  background-color: #2f9ca3; /* teal */
+
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.save-btn:disabled {
+  background-color: #9ca3af; /* gray */
+  cursor: not-allowed;
+}

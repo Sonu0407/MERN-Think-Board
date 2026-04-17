@@ -1,0 +1,150 @@
+.page {
+  min-height: 100vh; /* full screen height */
+  font-family: monospace;
+  font-size: 0.92rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* center */
+  padding: 32px 16px; /* py-8 px-4 */
+}
+
+.wrapper {
+  max-width: 672px; /* max-w-2xl */
+  margin: 0 auto;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 24px; /* mb-6 */
+
+  padding: 8px 12px;
+  border-radius: 6px;
+
+  background: transparent; /* btn-ghost */
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: #e8d3a8; /* paper style */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 24px; /* text-2xl */
+  font-weight: bold;
+  margin-bottom: 16px; /* mb-4 */
+}
+
+.form-control {
+  margin-bottom: 16px; /* mb-4 */
+}
+
+.label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.label-text {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border-bottom: 3px solid #a16207; /* brown color */
+}
+
+.input {
+  width: 96%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc; /* input-bordered */
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus {
+  border-color: #1f9aa5; /* match your navbar */
+  box-shadow: 0 0 0 2px rgba(31, 154, 165, 0.2);
+}
+
+input::placeholder {
+  color: #888;
+}
+
+.form-control-content {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.label-content {
+  font-weight: 500;
+}
+
+.label-text-content {
+  font-size: 15px;
+  color: #090909;
+  font-weight: 600;
+}
+
+.textarea-content {
+  width: 96%;
+  height: 130px;
+
+  padding: 10px;
+  border-radius: 8px;
+
+  border: 1px solid #ccc;
+  outline: none;
+
+  font-size: 14px;
+  resize: vertical;
+
+  background-color: #fdf6e3; /* matches your note style */
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end; /* justify-end */
+  margin-top: 20px;
+}
+
+.submit-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+
+  background-color: #1f9aa5; /* matches navbar */
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0f828d;
+}
